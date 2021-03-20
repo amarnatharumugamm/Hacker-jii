@@ -47,6 +47,37 @@
             margin: 0%;
             padding: 0%;
         }
+        #pills-tab{
+            float: right;
+
+        }
+
+        /* #pills-tab > li > button:active{
+            color: white;
+            background-color: #1ED760;
+        }
+        #pills-tab > li > button:hover{
+            color: white;
+            background-color: #1ED760;
+        } */
+        #mystyle{
+font-weight: bold;
+/* border-color: #1ED760;    */
+
+
+color: black;
+transition: .3s;
+
+        }
+        #mystyle:focus{
+            background-color: #1ED760!important;
+        }
+        #mystyle:hover{
+            color:black;
+            background-color: #1ED760;
+            box-shadow: black;
+            transform: scale(1.0);
+        }
     </style>
 </head>
 
@@ -128,18 +159,7 @@
                 <h3 style="font-family: 'Montserrat', sans-serif;">
                     Program preview</h3>
             </div>
-            <div class="bd-highlight col">
-                <a type="button " id="btn3 " class="btn btn-outline-light " href="activity.html " style="color: grey; border-radius: 0.75em;float: right ">
-                    <h5 class="mb-0">Activites</h5>
-                </a>
-                <a type="button " id="btn3 " class="btn btn-outline-light " href="invites.html " style="color: grey; border-radius: 0.75em; float: right">
-                    <h5 class="mb-0">Invites</h5>
-                </a>
-                <a type="button " id="btn3 " class="btn btn-outline-light active " style="color: grey; border-radius: 0.75em; background-color: #1ED760; color: black; float: right; ">
-                    <h5 class="mb-0">Overview</h5>
-                </a>
-                
-            </div>
+           
         </div>
         <!-- --------------------------------- -->
         <div class="mt-2">
@@ -151,7 +171,7 @@
                         <div class=" dropdown nav-item dropdown ">
                             <div class=" nav-link dropdown-toggle p-0" href=" # " type=" button " id=" dropdownMenuButton2 " data-bs-toggle=" dropdown " aria-expanded=" false ">
                                 Last Update
-                            </div>
+                           
                             <ul class=" dropdown-menu ">
                                 <li><a class=" dropdown-item " style=" color: #FFFFFF;" > MY ACTIVITIES</a></li>
                                 <li><a class=" dropdown-item " style=" color: #FFFFFF;" href=" # ">EDIT SETTINGS</a></li>
@@ -163,16 +183,27 @@
                 </div>
             </div>
             <!--content ends hear ---------------------- -->
+            <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist" >
+                <li class="nav-item " role="presentation" style="padding-left:10px ; " style="background-color: #1ED760 !important;" >
+                 <button class="btn btn-outline " id="mystyle"  style="font-size: 12px;" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false" >Overview</button>
+                    <!-- <button class="nav-link active" id="mystyle" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"  style="color: rgb(19, 18, 18); border-radius:0.75em;   float: right;">Home</button> -->
+                </li>
+                <li class="nav-item" role="presentation" style="padding-left:10px ; ">
+                 <button class="btn btn-outline" id="mystyle"style="font-size: 12px;"  data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" >Invites</button>
+                    <!-- <button class="nav-link" id="mystyle" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="color: rgb(19, 18, 18); border-radius:0.75em;float: right;">Profile</button> -->
+                </li>
+                <li class="nav-item" role="presentation" style="padding-left:10px ; ">
+                 <button class="btn btn-outline" id="mystyle" style="font-size: 12px;" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" >Activity</button>
+                    <!-- <button class="nav-link" id="mystyle" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="color: rgb(19, 18, 18); border-radius:0.75em;  float: right;">Contact</button> -->
+                </li>
+              </ul>
 
 
-
-
-
-
-            <div class="mt-4 " >
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <div class="mt-4 ">
                     <div style=" background-color: white; width: 100%; height: 100%; border-radius:12px; border: 3px solid #1ED760; display: inline-flex; box-shadow: 0.15em 0.15em 2em lightgrey ">
                         <img src="images/Hacker-ji_asserts/Logo_in_Feed (5).svg" alt="boximg" style="width: 3.37em; height: 3.37em; margin: 1.3em; border-radius:10px;">
-
+        
                         <div>
                             <h4 style="color:grey; margin-top: 1.37em; font-family:'Montserrat'; " class="fs-6 mb-0 ">LIFE MADE</h4>
                             <P class="fs-7 " style="font-size: 9px;"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit qwerty asdfg.
@@ -207,52 +238,147 @@
                     </div>
             </div>
             <!-- box end---- -->
-
-            <div class="mt-4 " >
-                <div style=" background-color: white; width: 100%; height: 100%; border-radius:12px; border: 3px solid #1ED760; display: inline-flex; box-shadow: 0.15em 0.15em 2em lightgrey ">
-                    <img src="images/Hacker-ji_asserts/Logo_in_Feed (2).svg" alt="boximg" style="width: 3.37em; height: 3.37em; margin: 1.3em; border-radius:10px;">
-
-                    <div>
-                        <h4 style="color:grey; margin-top: 1.37em; font-family:'Montserrat'; " class="fs-6 mb-0 ">LIFE MADE</h4>
-                        <P class="fs-7 " style="font-size: 9px;"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit qwerty asdfg.
-                            <br> Nam corrupti qui odio esse recusandae nihil quidem quasv frfrf</strong>
-                        </P>
-                    </div>
-                    <!-- --- -->
-                    <div class="m-lg-auto m-md-auto m-sm-auto">
-                        <button type="button " class="btn btn-lg " style="background-color: lightgrey; border-radius: 0.5em; margin-left: 24em; padding: 2px 12px; font-size: 18px;">Open program</button>
-                        <button type="button " class="btn btn-lg ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px; ">
-            <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
-              class="bi bi-heart " viewBox="0 0 16 16 ">
-              <path
-                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8
-                    15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z " />
-            </svg>
-          </button>
-                        <button type="button " class="btn btn-lg me-2 ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px;">
-            <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
-              class="bi bi-eye-slash " viewBox="0 0 16 16 ">
-              <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465
-                    1.755-.165.165-.337.328-.517.486l.708.709z " />
-              <path
-                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299l.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z " />
-              <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296
-                    8.884l-12-12 .708-.708 12 12-.708.708z " />
-            </svg>
-          </button>
-                        <p class="me-2 mb-lg-0 mt-3 " style="font-size: 0.6em; margin-left: 41em; ">Last Updated: About 9 Hours Ago. Last Submission: About 9 Hours Ago </p>
-                    </div>
-                    <!-- -- -->
-                </div>
-        </div>
-        <!-- box end---- -->
-
-
+                    <div class="mt-4 " >
+                        <div style=" background-color: white; width: 100%; height: 100%; border-radius:12px; border: 3px solid #1ED760; display: inline-flex; box-shadow: 0.15em 0.15em 2em lightgrey ">
+                            <img src="images/Hacker-ji_asserts/Logo_in_Feed (2).svg" alt="boximg" style="width: 3.37em; height: 3.37em; margin: 1.3em; border-radius:10px;">
         
+                            <div>
+                                <h4 style="color:grey; margin-top: 1.37em; font-family:'Montserrat'; " class="fs-6 mb-0 ">LIFE MADE</h4>
+                                <P class="fs-7 " style="font-size: 9px;"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit qwerty asdfg.
+                                    <br> Nam corrupti qui odio esse recusandae nihil quidem quasv frfrf</strong>
+                                </P>
+                            </div>
+                            <!-- --- -->
+                            <div class="m-lg-auto m-md-auto m-sm-auto">
+                                <button type="button " class="btn btn-lg " style="background-color: lightgrey; border-radius: 0.5em; margin-left: 24em; padding: 2px 12px; font-size: 18px;">Open program</button>
+                                <button type="button " class="btn btn-lg ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px; ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                      class="bi bi-heart " viewBox="0 0 16 16 ">
+                      <path
+                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8
+                            15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z " />
+                    </svg>
+                  </button>
+                                <button type="button " class="btn btn-lg me-2 ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16 " height="16 " fill="currentColor "
+                      class="bi bi-eye-slash " viewBox="0 0 16 16 ">
+                      <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465
+                            1.755-.165.165-.337.328-.517.486l.708.709z " />
+                      <path
+                        d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299l.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z " />
+                      <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296
+                            8.884l-12-12 .708-.708 12 12-.708.708z " />
+                    </svg>
+                  </button>
+                                <p class="me-2 mb-lg-0 mt-3 " style="font-size: 0.6em; margin-left: 41em; ">Last Updated: About 9 Hours Ago. Last Submission: About 9 Hours Ago </p>
+                            </div>
+                            <!-- -- -->
+                        </div>
+                </div>
+                <!-- box end---- -->
+        
+           </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div style="display: flex;justify-content: center; align-items: center; margin-top: 3em; ">
+                        <h2 style="font-weight: bolder">You don't have any Invites now</h2>
+                    </div>
+                    <!-- ------- -->
+            
+                    <!-- para -->
+                    <div style="display: flex;justify-content: center; align-items: center; margin-top: 1em;">
+                        <h6 class="mt-lg-2 mt-md-2 mt-sm-2" style="font-size: 0.8em; text-align: center;">Whenever a company wants you to work on their (hidden) program, you will find the invite here <br> Work on other programs to get notified by the companies </h6>
+            
+                    </div>
+                      <!-- button start -->
+                <div style="display: flex;justify-content: center; align-items: center; margin-top: 1.5em;">
+                    <a type="button" class="btn btn-lg" href="#" style="background-color: #1ED760; border-radius: 0.75em;"><strong>Browser Programs</strong></a>
+                </div>
+                <!-- button end-->
+        
+                    <!-- para end --></div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="mt-4 " >
+                            <div style=" background-color: white; width: 100%; height: 100%; border-radius:12px; border: 3px solid #1ED760; display: inline-flex; box-shadow: 0.15em 0.15em 2em lightgrey ">
+                                <img src="images/Hacker-ji_asserts/Logo_in_Feed (5).svg" alt="boximg" style="width: 3.37em; height: 3.37em; margin: 1.3em; border-radius:10px;">
+            
+                                <div>
+                                    <h4 style="color:grey; margin-top: 1.37em; font-family:'Montserrat'; " class="fs-6 mb-0 ">LIFE MADE</h4>
+                                    <P class="fs-7 " style="font-size: 9px;"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit qwerty asdfg.
+                                        <br> Nam corrupti qui odio esse recusandae nihil quidem quasv frfrf</strong>
+                                    </P>
+                                </div>
+                                <!-- --- -->
+                                <div class="m-lg-auto m-md-auto m-sm-auto">
+                                    <button type="button " class="btn btn-lg " style="background-color: lightgrey; border-radius: 0.5em; margin-left: 24em; padding: 2px 12px; font-size: 18px;">Open program</button>
+                                    <button type="button " class="btn btn-lg ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px; ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                          class="bi bi-heart " viewBox="0 0 16 16 ">
+                          <path
+                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8
+                                15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z " />
+                        </svg>
+                      </button>
+                                    <button type="button " class="btn btn-lg me-2 ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px;">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                          class="bi bi-eye-slash " viewBox="0 0 16 16 ">
+                          <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465
+                                1.755-.165.165-.337.328-.517.486l.708.709z " />
+                          <path
+                            d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299l.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z " />
+                          <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296
+                                8.884l-12-12 .708-.708 12 12-.708.708z " />
+                        </svg>
+                      </button>
+                                    <p class="me-2 mb-lg-0 mt-3 " style="font-size: 0.6em; margin-left: 41em; ">Last Updated: About 9 Hours Ago. Last Submission: About 9 Hours Ago </p>
+                                </div>
+                                <!-- -- -->
+                            </div>
+                    </div>
+                    <!-- box end---- -->
+            
+                    <div class="mt-4 " >
+                        <div style=" background-color: white; width: 100%; height: 100%; border-radius:12px; border: 3px solid #1ED760; display: inline-flex; box-shadow: 0.15em 0.15em 2em lightgrey ">
+                            <img src="images/Hacker-ji_asserts/Logo_in_Feed (2).svg" alt="boximg" style="width: 3.37em; height: 3.37em; margin: 1.3em; border-radius:10px;">
+            
+                            <div>
+                                <h4 style="color:grey; margin-top: 1.37em; font-family:'Montserrat'; " class="fs-6 mb-0 ">LIFE MADE</h4>
+                                <P class="fs-7 " style="font-size: 9px;"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit qwerty asdfg.
+                                    <br> Nam corrupti qui odio esse recusandae nihil quidem quasv frfrf</strong>
+                                </P>
+                            </div>
+                            <!-- --- -->
+                            <div class="m-lg-auto m-md-auto m-sm-auto">
+                                <button type="button " class="btn btn-lg " style="background-color: lightgrey; border-radius: 0.5em; margin-left: 24em; padding: 2px 12px; font-size: 18px;">Open program</button>
+                                <button type="button " class="btn btn-lg ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px; ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                      class="bi bi-heart " viewBox="0 0 16 16 ">
+                      <path
+                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8
+                            15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z " />
+                    </svg>
+                  </button>
+                                <button type="button " class="btn btn-lg me-2 ms-3 " style="background-color: lightgrey; border-radius: 0.5em; padding: 2px 12px; font-size: 18px;">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                      class="bi bi-eye-slash " viewBox="0 0 16 16 ">
+                      <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465
+                            1.755-.165.165-.337.328-.517.486l.708.709z " />
+                      <path
+                        d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299l.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z " />
+                      <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296
+                            8.884l-12-12 .708-.708 12 12-.708.708z " />
+                    </svg>
+                  </button>
+                                <p class="me-2 mb-lg-0 mt-3 " style="font-size: 0.6em; margin-left: 41em; ">Last Updated: About 9 Hours Ago. Last Submission: About 9 Hours Ago </p>
+                            </div>
+                            <!-- -- -->
+                        </div>
+                </div></div>
+              </div>
 
 
 
-            </div>
+
+       
             <!-- body end -->
 
     
