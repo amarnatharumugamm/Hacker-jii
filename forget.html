@@ -102,14 +102,17 @@
                     style="margin-left: 150px;">
             </div>
         </div>
+    </div>
+    <div id="one">
         <div class="col-lg-6 col-md-5 col-sm-3 me-3" style="position: absolute; top: 200px; right: -170px;">
             <h1 style="color: white; font-family: Montserrat;">FORGOT <span style="color: #1ED760;">PASSWORD</span>
             </h1>
         </div>
-    </div>
-    <label for="Email" style="position: absolute; top: 300px; right:396px;font-size:11px; color: #1ED760;">EMAIL</label>
-    <input type="email" placeholder="" class="emaill">
-    <div class="waves-effect waves-light btn-large" style="
+
+        <label for="Email"
+            style="position: absolute; top: 300px; right:396px;font-size:11px; color: #1ED760;">EMAIL</label>
+        <input type="email" placeholder="" class="emaill">
+        <div id="btn" class="waves-effect waves-light btn-large" style="
                     cursor: pointer;
                     background-color: #1ed760;
                     border-radius: 8px;
@@ -123,13 +126,19 @@
                     top: 390px;
                     right: 190px;
                   ">
-        RECOVER
+            RECOVER
+        </div>
     </div>
     </div>
     <!--about ends hear -->
     </div>
 
+    <div>
+        <h1 id="two" style="color: white; position: absolute; top: 300px; right: 200px;"><span style="color: #1ED760;">
+                MAIL </span>HAS BEEN SENT!</h1>
+    </div>
     <!--bootstrap js-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
@@ -137,6 +146,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('#two').hide(3);
+            $('#btn').click(function () {
+                $('#two').show(1000);
+                $('#one').hide(1000);
+
+            });
+        });
+    </script>
 </body>
 
 </html>
