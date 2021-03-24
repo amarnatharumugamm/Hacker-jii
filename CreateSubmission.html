@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://ik.imagekit.io/bfzb9z4tav/hackerg/hackerg-fav_ILMNFz7ej.svg"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- font -->
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <title>Hacker-ji</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+
+        #btn {
+            color: grey;
+        }
+
+        #btn3:hover {
+            background-color: #1ED760;
+            color: #000;
+            box-shadow: 0.15em 0.15em 2em rgb(211, 209, 209);
+            font-weight: bold;
+        }
+
+        .mob-box:hover {
+            background-color: #1ED760;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div>
+
+        <!-- navbar starts hear------------------------------->
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark  sticky-lg-top sticky-md-top sticky-sm-top"
+            style="background-color: #000000;">
+            <a href="./home.html"> <img src="images/Hacker-ji_asserts/Hacker-ji_Logo_symbole.svg" alt="image"
+                    class="mx-4" style="width: 3.2em; height: 3.2em;"></a>
+            <div class="container" style="padding: 0px;margin-right: 0px;">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse mx-auto" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-family: 'Open Sans', sans-serif; color: #1ED760;"
+                                aria-current="page" href="index.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Open Sans', sans-serif; color: #fff;"
+                                href="browser-program.html">Browser Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Open Sans', sans-serif; color: #fff;"
+                                href="submission.html">My
+                                Submission</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- user image -->
+                <img src="images/Hacker-ji_asserts/Profile.svg" id="#navbarText" alt="user"
+                    style="width: 2.75em; height: 2.75em;">
+                <!-- user image end -->
+                <div class="dropdown nav-item dropdown" id="#navbarText">
+                    <div class="nav-link dropdown-toggle" href="#" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="color: #1ED760; background-color: #000000;">
+                        John Doe
+                    </div>
+                    <p style="color: white; font-size: 0.7em;" class="mx-lg-0 my-lg-0 py-0 px-3">Not Ranked</p>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-left"
+                        style="right:47px; left:-77px; background-color: #000000; align-items: center; border-bottom-left-radius: 1.2em; border-bottom-right-radius: 1.2em; padding-bottom: 0; border: none; text-align: left; font-size: small;">
+                        <li>
+                            <a class="dropdown-item" style="color: #fff; padding-left: 28px;  font-size: 12px;"
+                                href="#"> <i style="color: #fff; font-size: 12px;padding-right: 5px;"
+                                    class='bx bxs-user'></i> MY ACTIVITIES</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" style="color: #fff; padding-left: 28px;  font-size: 12px;"
+                                href="#"> <i style="color: #fff; font-size: 12px;padding-right: 5px;"
+                                    class='bx bxs-cog'></i> EDIT SETTINGS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" style="color: #fff; padding-left: 28px;  font-size: 12px;"
+                                href="#"> <i style="color: #fff; font-size: 12px;padding-right: 5px;"
+                                    class='bx bxs-star'></i> LEADERBOARD</span>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item"
+                                style="background-color: #1ED760; color: #000000; border-bottom-left-radius: 1.2em; font-size: 12px; font-weight: bold; text-align: center; border-bottom-right-radius: 1.2em "
+                                href="#"> LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- navbar end ------------------------------------------------------->
+
+    <div class="container">
+
+        <img src="images/Hacker-ji_asserts/Ellipse 19.svg" alt="" height="70vh"
+            style="margin-top:50px;padding-left:21%;">
+        <h4 style="position:absolute;top:145px; left: 440px; font-family:Montserrat; font-weight: light;">LIFE
+            MADE\PREVIEW</h4>
+        <p
+            style="position:absolute;top:200px; left: 370px; font-family:Montserrat; font-weight: light;font-size: 12px;">
+            Last
+            Updated 9 Hours Ago. Last
+            Submitted 9 Hours Ago</p>
+    </div>
+    <div class="container-fluid"
+        style="display: grid; grid-template-columns: 20% 75%; margin-top: 30px; margin-left: 10px;">
+        <div style="width: 90%;
+    height: 80vh; background-color:#fff; margin-top: 20px; border-radius: 40px;">
+            <br>
+            <input type="text" placeholder=" ! Filters" style="border-radius: 8px; margin-left: 30px;">
+            <center>
+                <h5 style="font-weight: bolder; margin-top: 20px; color: #1ED760;">Show Filter</h5>
+            </center>
+            <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color: transparent; font-size: 12px; color: black; outline: none; border: none;font-weight: bold; margin-top: -1px; margin-left: 30px;">
+                    Title
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color: transparent; font-size: 12px; color: black; outline: none; border: none;font-weight: bold; margin-top: -60px; margin-left: 90px;">
+                    Programs All
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="mob-box">
+                <p style="margin-top: -20px; padding-left: 20px; font-size: 12px;">Achived</p>
+                <p style="margin-top: -15px; padding-left: 20px; font-weight: bolder; ">2FA</p>
+                <p style="margin-top: -15px; padding-left:20px; font-size: 12px"> <span> Medium &nbsp;&nbsp; monopoly
+                        &nbsp;&nbsp;
+                        ID:212131</span></p>
+            </div>
+
+            <div style="margin-top: 15px;" class="mob-box">
+                <p style="margin-top: -20px; padding-left: 20px; font-size: 12px;">Achived</p>
+                <p style="margin-top: -15px; padding-left: 20px; font-weight: bolder; ">2FA</p>
+                <p style="margin-top: -15px; padding-left:20px; font-size: 12px"> <span> Medium &nbsp;&nbsp; monopoly
+                        &nbsp;&nbsp;
+                        ID:212131</span></p>
+            </div>
+            <div style="margin-top: 15px;" class="mob-box">
+                <p style="margin-top: -20px; padding-left: 20px; font-size: 12px;">Achived</p>
+                <p style="margin-top: -15px; padding-left: 20px; font-weight: bolder; ">2FA</p>
+                <p style="margin-top: -15px; padding-left:20px; font-size: 12px"> <span> Medium &nbsp;&nbsp; monopoly
+                        &nbsp;&nbsp;
+                        ID:212131</span></p>
+
+            </div>
+            <div style="margin-top: 15px;" class="mob-box">
+                <p style="margin-top: -20px; padding-left: 20px; font-size: 12px;">Achived</p>
+                <p style="margin-top: -15px; padding-left: 20px; font-weight: bolder; ">2FA</p>
+                <p style="margin-top: -15px; padding-left:20px; font-size: 12px"> <span> Medium &nbsp;&nbsp; monopoly
+                        &nbsp;&nbsp;
+                        ID:212131</span></p>
+            </div>
+
+            <div style="margin-top: 15px;" class="mob-box">
+                <p style="margin-top: -20px; padding-left: 20px; font-size: 12px;">Achived</p>
+                <p style="margin-top: -15px; padding-left: 20px; font-weight: bolder; ">2FA</p>
+                <p style="margin-top: -15px; padding-left:20px; font-size: 12px"> <span> Medium &nbsp;&nbsp; monopoly
+                        &nbsp;&nbsp;
+                        ID:212131</span></p>
+            </div>
+
+            <div style="margin-top: 15px;" class="mob-box">
+                <p style="margin-top: -20px; padding-left: 20px; font-size: 12px;">Achived</p>
+                <p style="margin-top: -15px; padding-left: 20px; font-weight: bolder; ">2FA</p>
+                <p style="margin-top: -15px; padding-left:20px; font-size: 12px"> <span> Medium &nbsp;&nbsp; monopoly
+                        &nbsp;&nbsp;
+                        ID:212131</span></p>
+            </div>
+
+        </div>
+        <div style="width:100%;
+        height: 390vh; background-color:#fff; margin-top: 20px; border-radius: 30px;">
+            <h5 style="padding:30px;">General</h5>
+            <p style="margin-top: -15px; padding-left:80px;font-weight:500;">
+                Title
+            </p>
+            <input type="text"
+                style="width:700px; border-radius: 20px;margin-left: 80px; outline: none; border: 1px solid black;"><br><br>
+            <div>
+                <h5 style="position: relative; left: 80px;">Select Domain</h5>
+            </div><br>
+            <div>
+                <p style="margin-left:100px;padding-bottom: 20px; "> Tier</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="background-color: transparent; font-size: 12px; color: black; outline: none; border: none;font-weight: bold; margin-top: -60px; margin-left: 90px;">
+                        ALL
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <p style="margin-left: 150px;position: relative; top: -85px; "> Type</p>
+                <div class="dropdown " style="position: relative; top: -23px; left: 50px;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="background-color: transparent; font-size: 12px; color: black; outline: none; border: none;font-weight: bold; margin-top: -140px; margin-left: 90px;">
+                        ALL
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="&nbsp;&nbsp;&nbsp;  FILTER TEXT"
+                    style="border-radius: 20px; border: 1px solid black; position:relative;bottom: 140px; left: 680px; height: 6vh;  ">
+            </div>
+            <div style="position: relative; bottom: 90px;">
+                <p style="font-weight:500;font-size: 18px; margin-left:100px; "> 132.132.132.132.13.13123.1</p>
+                <button
+                    style="background-color: #1ED760; border: 1px solid #1ED760; color: #fff; border-radius: 8px; width: 90px; margin-left: 550px; position: relative; bottom: 35px;">Tier</button>
+                <p style="font-weight: 500; position: relative;margin-left: 750px;  bottom: 70px; ">
+                    IP Range
+                </p>
+            </div>
+            <div style="position: relative; bottom: 120px;">
+                <p style="font-weight:500;font-size: 18px; margin-left:100px; "> 132.132.132.132.13.13123.1</p>
+                <button
+                    style="background-color: #1ED760; border: 1px solid #1ED760; color: #fff; border-radius: 8px; width: 90px; margin-left: 550px; position: relative; bottom: 35px;">Tier</button>
+                <p style="font-weight: 500; position: relative;margin-left: 750px;  bottom: 70px; ">
+                    IP Range
+                </p>
+            </div>
+            <div style="position: relative; bottom: 140px;">
+                <p style="font-weight:500;font-size: 18px; margin-left:100px; "> 132.132.132.132.13.13123.1</p>
+                <button
+                    style="background-color: #1ED760; border: 1px solid #1ED760; color: #fff; border-radius: 8px; width: 90px; margin-left: 550px; position: relative; bottom: 35px;">Tier</button>
+                <p style="font-weight: 500; position: relative;margin-left: 750px;  bottom: 70px; ">
+                    IP Range
+                </p>
+                <h4 style="position:relative; left: 50px;font-weight:bold;">Type</h4>
+            </div>
+            <div
+                style="width:80%; height:40vh; border:1px solid black; position: relative; bottom: 100px; left: 50px; border-radius: 20px;">
+
+                <div
+                    style="margin-left:40px; margin-top: 30px; line-height: 8px; font-family:Montserrat; font-weight: 600;">
+                    <p>All</p>
+                    <p>Access Control Issues</p>
+                    <p>Injection</p>
+                    <p>Broken Auth</p>
+                    <p>XML external entities</p>
+                    <p>Insecure dis</p>
+                    <p>Vulnearble Components</p>
+                    <p>Crytographic </p>
+                    <p>Injection</p>
+                    <p>Broken Auth</p>
+
+                    <input type="text" placeholder="&nbsp; &nbsp; &nbsp;  WOPEN NAME"
+                        style="width: 400px; height: 6vh; border: 1px solid black; position: relative;left:250px; bottom:250px; border-radius:15px; ">
+                </div>
+
+
+                <div style="border-left: 3px solid grey; position: relative; bottom: 250px; margin-left: 250px;
+            height:190px;"></div>
+
+                <div
+                    style="margin-left:350px;  line-height: 8px; font-family:Montserrat; font-weight: 600; position: relative; bottom: 430px; right:70px;">
+                    <p>All</p>
+                    <p>Access Control Issues</p>
+                    <p>Injection</p>
+                    <p>Broken Auth</p>
+                    <p>XML external entities</p>
+                    <p>Insecure dis</p>
+                    <p>Vulnearble Components</p>
+                    <p>Crytographic </p>
+                </div>
+                <div style="border-left: 3px solid grey; position: relative; bottom:670px; margin-left: 710px;
+            height:190px;"></div>
+                <h4 style="position: relative; bottom:590px;  font-family: montserrat; font-weight: bold;">
+                    Severity</h4>
+                <button
+                    style="position: relative; bottom:590px; margin-left:30%;background-color: transparent;border: transparent; font-family: montserrat; font-weight: bold;">
+                    Select Severity</button>
+                <button
+                    style="position: relative; bottom:590px; margin-left:10%;background-color: transparent;border: transparent; font-family: montserrat; font-weight: bold;">
+                    CVSS calculator</button>
+                <center>
+                    <div
+                        style="border: 1px solid black; width: 600px; border-radius: 10px; height:6vh; padding: 5px; position: relative; bottom: 550px;">
+                        <ul
+                            style="display: flex; flex-direction: row;justify-content: space-between; list-style-type: none; margin-right:20px;">
+                            <li>None </li>
+                            <li>Low</li>
+                            <li>medium</li>
+                            <li>Critical</li>
+                            <li>Exceptional</li>
+                            <li>Undecided</li>
+                        </ul>
+                </center>
+                <div style="position: relative; bottom: 500px;">
+                    <h4>Details</h4>
+                    <p style="margin-left: 50px; margin-top: 10px;  font-weight: bold;">Attachments</p>
+                    <button
+                        style="border-radius: 10px; background-color: #1ED760; border: none; font-weight: bold; padding:10px; width: 150px;margin-left: 150px; ">Upload
+                        File</button>
+                    <p style="margin-left: 40px; margin-top: 20px;  font-weight: bold;">
+                        Proof of description
+                    </p>
+                    <div style="width: 100%; height: 30vh; border: 1px solid black; border-radius: 20px;"></div>
+                    <p style="margin-left: 40px; margin-top: 20px;  font-weight: bold;">
+                        Impact
+                    </p>
+                    <div style="width: 100%; height: 30vh; border: 1px solid black; border-radius: 20px;"></div>
+                    <p style="margin-left: 40px; margin-top: 20px;  font-weight: bold;">
+                        Recommended Solutions
+                    </p>
+                    <div style="width: 100%; height: 30vh; border: 1px solid black; border-radius: 20px;"></div>
+                    <p style="margin-left: 40px; margin-top: 20px; font-weight: bold;">
+                        IP Address Used For Testing (optional)
+                    </p>
+                    <p style="margin-left: 40px;">sharing your ip address will allow companies to match this against
+                        their logs to validate your
+                        test,sharing is Recommendedbut optional and can be easily be done</p>
+                    <div style="width: 100%; height: 10vh; border: 1px solid black; border-radius: 20px;"></div>
+                    <p style="margin-left: 40px; margin-top: 20px;  font-weight: bold;">
+                        Submission Questions
+                    </p>
+                    <div style="width: 100%; height: 20vh; border: 1px solid black; border-radius: 20px;"></div>
+                    <center> <button
+                            style="border-radius: 10px; background-color: black; color:white; border: none; font-weight: bold; padding:10px; width: 150px; ">Cancel</button>
+                        <button
+                            style="border-radius: 10px; background-color: #1ED760; border: none; font-weight: bold; padding:10px; width: 150px;margin-left: 50px; margin-top: 20px; ">Upload
+                            File</button>
+                    </center>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <!-- body end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
